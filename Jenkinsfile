@@ -1,5 +1,9 @@
 pipeline{
 	agent any
+	environment {
+		USER_NAME = 'LE GUELLANFF'
+		PREFERED_COLOR = 'BLUE'
+	}	
 	stages {
 		stage('lister les variables'){
 			steps {
@@ -8,7 +12,8 @@ pipeline{
 		}
 		stage('utilisation des variables'){
 			steps {
-				echo 'Hello World!'
+				echo env.USER_NAME
+				echo env.PREFERED_COLOR
 			}
 		}
 	}
