@@ -11,6 +11,10 @@ pipeline{
 			}
 		}
 		stage('utilisation des variables'){
+			environment {
+				PREFERED_LEISURE = 'WATCHING SERIES'
+				PREFERED_COLOR = 'RED'
+			}	
 			steps {
 				echo env.USER_NAME
 				echo env.PREFERED_COLOR
