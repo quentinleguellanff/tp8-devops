@@ -1,10 +1,14 @@
 pipeline{
 	agent any
 	stages {
-		stage('stage 1'){
+		stage('lister les variables'){
 			steps {
-				echo 'Hello World!'
-				echo env.BRANCH_NAME
+				sh 'printenv'
+			}
+		}
+		stage('utilisation des variables'){
+			steps {
+				
 			}
 		}
 	}
