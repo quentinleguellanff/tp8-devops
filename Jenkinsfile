@@ -8,7 +8,7 @@ pipeline{
 		}
 		stage('utilisation des variables'){
 			steps {
-				
+				echo 'Hello World!'
 			}
 		}
 	}
